@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>じゃんけんゲーム</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>じゃんけんゲーム</h1>
+        </header>
+        <main>
+            <div class="game-area">
+                <div class="choices">
+                    <button id="gu" class="choice-btn"><img src="images/グー-removebg-preview.png" alt="グー"></button>
+                    <button id="choki" class="choice-btn"><img src="images/チョキ-removebg-preview.png" alt="チョキ"></button>
+                    <button id="pa" class="choice-btn"><img src="images/パー-removebg-preview.png" alt="パー"></button>
+                </div>
+                <button id="decide-btn" disabled>決定</button>
+                <div class="result">
+                    <div class="hands">
+                        <div class="hand">
+                            <p>あなたの選択</p>
+                            <div id="player-hand" class="hand-image"></div>
+                        </div>
+                        <div class="hand">
+                            <p>コンピュータの選択</p>
+                            <div id="computer-hand" class="hand-image"></div>
+                        </div>
+                    </div>
+                    <p class="judgment">結果: <span id="judgment"></span></p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/janken.js"></script>
+</body>
+
+</html>
